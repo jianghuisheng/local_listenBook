@@ -1,0 +1,89 @@
+/* 全局样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    width: 100%; 
+}
+
+
+body {
+    margin: 0;
+    font-family: Chinese Quote,-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    color: rgba(0,0,0,.65);
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover { text-decoration: none;}
+
+ul li {
+    list-style: none;
+}
+
+img{
+    vertical-align: middle; 
+}
+
+/* 处理UI框架默认样式 */
+
+
+.el-table tr{
+    height:50px;
+}
+/* 默认表头高度 */
+.el-table th{
+    background:#fff !important;
+    height:50px;
+}
+
+/* 处理表头文字标签 */
+.el-table th>.cell {
+    background:#fff !important;
+    white-space: nowrap;
+    padding-left:10px;
+    padding-right: 10px;
+    font-weight: normal;
+}
+
+/* 处理非表头文字标签 */
+.el-table .cell{
+    white-space: nowrap !important;
+    padding-left:10px !important;
+    padding-right:10px !important;
+    text-align: left;
+}
+
+/* 处理表格的高度 */
+.el-table tr td {
+    height:65px !important;
+    padding:16px 0;
+}
+
+/* 处理表格中按钮的内边距 */
+div.cell .el-button{
+    padding:10px;
+}
+
+/* 处理遮罩层出现时，表格边框高亮显示 */
+.el-table::after, .el-table::before{
+    height: 0 !important;
+}
+
+.el-table--fit{
+    border-right: 1px solid #dfe6ec !important;
+}
+
+.el-dialog__header{
+    display: none;
+}
+
